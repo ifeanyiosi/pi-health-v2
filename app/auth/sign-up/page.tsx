@@ -200,7 +200,7 @@ export default function SignUpPage() {
             <p className="text-[rgba(0,0,0,0.65)] mt-4 lg:mt-[60px] text-[15px] ">
               Have an account?
               <Link
-                className="text-pi-green font-bold hover:underline "
+                className="text-[#227322] px-0.5 font-bold underline "
                 href="/auth/login"
               >
                 Login

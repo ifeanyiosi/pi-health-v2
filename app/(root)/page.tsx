@@ -1,17 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center w-full h-screen justify-center">
-      <div className="flex items-center justify-center">
-        <Button>Kill me</Button>
-      </div>
+      <div className="flex items-center justify-center"></div>
 
-      <div className="mt-8">
-        <Input />
-      </div>
+      <Link href="/auth/login">login</Link>
+      <Link href="/auth/sign-up">signup</Link>
+      <Link href="/auth/forgot-password">forgot password</Link>
 
       <div className="mt-8">
         <p className="font-aspekta">
