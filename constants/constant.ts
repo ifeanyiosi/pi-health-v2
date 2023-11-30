@@ -35,3 +35,98 @@ export const navBarList = [
     link: "collections/ankara",
   },
 ];
+
+export const reviewers = [
+  {
+    id: 1,
+    img: "/person1.svg",
+    name: "Jay Johnson",
+    review:
+      "I love their wearables, the sleep patch has improved my sleep life",
+  },
+
+  {
+    id: 2,
+    img: "/person2.svg",
+    name: "Jay Johnson",
+    review:
+      "I love their wearables, the sleep patch has improved my sleep life",
+  },
+
+  {
+    id: 3,
+    img: "/person3.svg",
+    name: "Jay Johnson",
+    review:
+      "I love their wearables, the sleep patch has improved my sleep life",
+  },
+
+  {
+    id: 4,
+    img: "/person4.svg",
+    name: "Jay Johnson",
+    review:
+      "I love their wearables, the sleep patch has improved my sleep life",
+  },
+
+  {
+    id: 5,
+    img: "/person5.svg",
+    name: "Jay Johnson",
+    review:
+      "I love their wearables, the sleep patch has improved my sleep life",
+  },
+
+  {
+    id: 6,
+    img: "/person5.svg",
+    name: "Jay Johnson",
+    review:
+      "I love their wearables, the sleep patch has improved my sleep life",
+  },
+];
+
+export const relatedProducts = [
+  {
+    id: 1,
+    img: "/related-products/related1.png",
+    name: "ECG Patch",
+    desc: "PiHealth's ECG belts bring hospital-grade electrocardiogram technology to your daily life.",
+    price: 250,
+  },
+  {
+    id: 1,
+    img: "/related-products/related2.png",
+    name: "Sleep Belt",
+    desc: "PiHealth's ECG belts bring hospital-grade electrocardiogram technology to your daily life.",
+    price: 250,
+  },
+  {
+    id: 1,
+    img: "/related-products/related3.png",
+    name: "ECG Watch",
+    desc: "PiHealth's ECG belts bring hospital-grade electrocardiogram technology to your daily life.",
+    price: 250,
+  },
+  {
+    id: 1,
+    img: "/related-products/related4.png",
+    name: "Blood Pressure Watch",
+    desc: "PiHealth's ECG belts bring hospital-grade electrocardiogram technology to your daily life.",
+    price: 250,
+  },
+  {
+    id: 1,
+    img: "/related-products/related1.png",
+    name: "ECG Patch",
+    desc: "PiHealth's ECG belts bring hospital-grade electrocardiogram technology to your daily life.",
+    price: 250,
+  },
+  {
+    id: 1,
+    img: "/related-products/related1.png",
+    name: "ECG Patch",
+    desc: "PiHealth's ECG belts bring hospital-grade electrocardiogram technology to your daily life.",
+    price: 250,
+  },
+];

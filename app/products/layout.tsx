@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/navbar";
 import Reviews from "@/components/reviews";
-import RelatedProducts from "@/components/related-products";
+import RelatedProducts from "@/components/related-products/related-products";
 import ProductFeatures from "@/components/product-features";
 
 export const metadata: Metadata = {
