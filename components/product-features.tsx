@@ -5,7 +5,7 @@ export default function ProductFeatures() {
   return (
     <div className="w-full py-[60px] px-[30px] lg:px-[64px] bg-[#fff] ">
       <div className="w-full flex flex-col items-center justify-center">
-        <h1 className="text-[#000] w-full text-start text-[25px] lg:text-[32px] font-bold ">
+        <h1 className="text-[#000] w-full text-center lg:text-start text-[25px] lg:text-[32px] font-bold ">
           Product Features
         </h1>
 

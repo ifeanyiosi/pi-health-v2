@@ -1,13 +1,13 @@
 import ProductHero from "@/components/product-hero";
 import { Button } from "@/components/ui/button";
-import { heartRateBelt } from "@/constants/constant";
+import { bloodPressureWatch } from "@/constants/constant";
 import Image from "next/image";
 import React from "react";
 
-export default function HeartRateBelt() {
+export default function SmartSleepMonitor() {
   return (
     <div className="w-full">
-      {heartRateBelt.map((product) => (
+      {bloodPressureWatch.map((product) => (
         <ProductHero
           key={product.heading}
           image={product.img}

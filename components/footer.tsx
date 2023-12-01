@@ -10,12 +10,32 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="w-full flex flex-col min-h-[400px] bg-[#000]  justify-end items-center [@media_(min-width:_658px)]:pt-[78px] pt-[228px]">
+    <footer className="w-full flex flex-col min-h-[400px] bg-[#000]  justify-end items-center lg:pt-[78px] pt-[228px]">
       <div className="max-w-[1366px] flex flex-col gap-[32px]  mb-[40px] items-center justify-between w-full px-8">
-        <div className="flex w-full gap-[67px] [@media_(min-width:_658px)]:flex-row flex-col justify-between">
+        <div className="flex w-full gap-[67px] lg:flex-row flex-col justify-between">
           <div className="flex flex-col items-start gap-[8px] max-w-[300px]">
             <div className="mb-2 flex items-start text-[20px] w-full font-bold text-[#fff]   ">
-              <Link href='/'>PI SENSE</Link>
+              <Link href="/">PI SENSE</Link>
+            </div>
+
+            <div className="flex flex-col items-start gap-[12px]">
+              <h3 className="font-normal text-[18px] text-[#fff] max-w-[466px] text-center font-Beautiste leading-[21.6px]">
+                Contact Us
+              </h3>
+
+              <Link
+                href="mailto:support@savetobuy.io"
+                className="text-[#fff]/80 text-[14px]"
+              >
+                Mail
+              </Link>
+              <a
+                className="text-[#fff]/80 text-[14px]"
+                href="https://wa.link/xcesqo"
+                rel="noopener noreferrer"
+              >
+                Whatsapp
+              </a>
             </div>
 
             <div className="flex items-center gap-[20px] w-full">
@@ -112,25 +132,6 @@ export default function Footer() {
               rel="noopener noreferrer"
             >
               Android
-            </a>
-          </div>
-          <div className="flex flex-col items-start gap-[12px]">
-            <h3 className="font-normal text-[18px] text-[#fff] max-w-[466px] text-center font-Beautiste leading-[21.6px]">
-              Contact Us
-            </h3>
-
-            <Link
-              href="mailto:support@savetobuy.io"
-              className="text-[#fff]/80 text-[14px]"
-            >
-              Mail
-            </Link>
-            <a
-              className="text-[#fff]/80 text-[14px]"
-              href="https://wa.link/xcesqo"
-              rel="noopener noreferrer"
-            >
-              Whatsapp
             </a>
           </div>
         </div>
