@@ -22,12 +22,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <Provider store={store}>
-          <PersistGate loading={null} persistor={persistor}>
-            {children}
-            <Footer />{" "}
-          </PersistGate>
-        </Provider>
+        {children}
+        <Footer />{" "}
       </body>
     </html>
   );

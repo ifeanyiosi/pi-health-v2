@@ -7,14 +7,14 @@ interface BreadcrumbProps {
 
 const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
   return (
-    <nav className="text-sm font-medium text-gray-600" aria-label="Breadcrumb">
+    <nav className="text-sm  font-medium text-gray-600" aria-label="Breadcrumb">
       <ol className="list-none p-0 inline-flex">
         {items.map((item, index) => (
           <li key={index} className="flex items-center">
             {item.link ? (
               <>
                 <Link
-                  className="hover:underline text-pi-green "
+                  className="hover:underline text-[14px] lg:text-[20px] font-bold text-pi-green "
                   href={item.link}
                 >
                   {item.text}
@@ -26,7 +26,9 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
                 )}
               </>
             ) : (
-              <span>{item.text}</span>
+              <span className="text-[14px] whitespace-nowrap lg:text-[20px]">
+                {item.text}
+              </span>
             )}
           </li>
         ))}
