@@ -20,7 +20,7 @@ module.exports = {
         aspekta: ["AspektaVF", "sans-serif"],
       },
       colors: {
-        "pi-green": "#73DB73",
+        "pi-green": "#008080",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

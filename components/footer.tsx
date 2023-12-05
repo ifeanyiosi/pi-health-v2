@@ -38,7 +38,7 @@ export default function Footer() {
               </a>
             </div>
 
-            <div className="flex items-center gap-[20px] w-full">
+            <div className="flex items-center gap-[20px] mt-4 w-full">
               <a href="https://instagram.com/usesavetobuy?igshid=YmM0MjE2YWMzOA==">
                 <BsInstagram className="text-[#fff] " />
               </a>
