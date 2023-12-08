@@ -9,7 +9,8 @@ export default function HeartRateBelt() {
     <div className="w-full">
       {heartRateBelt.map((product) => (
         <ProductHero
-          key={product.heading}
+          id={product.id}
+          key={product.id}
           image={product.img}
           image2={product.img2}
           image3={product.img3}

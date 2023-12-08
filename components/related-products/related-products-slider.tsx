@@ -52,9 +52,10 @@ export default function RelatedProductsSlider() {
       <div className="w-full  ">
         <Slider className="z-[50] " {...settings}>
           {relatedProducts.map((rel) => (
-            <div className="flex items-center gap-4" key={rel.id}>
+            <div className="flex items-center px-2 py-4 gap-4" key={rel.id}>
               {" "}
-              <div
+              <Link
+                href={rel.href}
                 className="flex w-full z-[50] bg-[#fff]  items-center justify-start p-2 rounded-[8px] shadow-md h-full flex-col gap-3 "
                 key={rel.id}
               >
@@ -74,7 +75,7 @@ export default function RelatedProductsSlider() {
                   {rel.desc}{" "}
                 </p>
                 <div className="flex items-center w-full justify-between">
-                  <p className="text-[#29B852] font-bold text-[18px] ">
+                  <p className="text-pi-green font-bold text-[18px] ">
                     ${rel.price}{" "}
                   </p>
 
@@ -87,7 +88,7 @@ export default function RelatedProductsSlider() {
                     />
                   </Link>
                 </div>
-              </div>
+              </Link>
             </div>
           ))}
         </Slider>

@@ -100,7 +100,7 @@ export default function LoginPage() {
               </div>
 
               <Button
-                className=" text-[#000] h-[55px] font-bold text-[18px] "
+                className="  h-[55px] font-bold text-[18px] "
                 type="submit"
               >
                 Login

@@ -154,7 +154,7 @@ export default function SignUpPage() {
               />
 
               <Button
-                className=" text-[#000] h-[55px] py-[16px] font-bold text-[16px] "
+                className="  h-[55px] py-[16px] font-bold text-[16px] "
                 type="submit"
               >
                 Sign Up

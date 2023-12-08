@@ -2,6 +2,12 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/footer";
+import { PersistGate } from "redux-persist/integration/react";
+import "slick-carousel/slick/slick.css";
+
+import { persistor, store } from "@/lib/redux/store";
+import { Providers } from "@/lib/provider";
+import Navbar from "@/components/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,8 +24,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        {children}
-        <Footer />{" "}
+        <Providers>
+          <Navbar />
+          {children}
+          <Footer />{" "}
+        </Providers>
       </body>
     </html>
   );

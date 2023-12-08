@@ -78,13 +78,13 @@ export default function NavbarContent() {
         Support
       </Link>
 
-      <Link
+      {/* <Link
         className="text-[16px] flex gap-1 items-center font-bold text-[#000]"
         href="/"
       >
         {" "}
         Shop Now
-      </Link>
+      </Link> */}
     </div>
   );
 }

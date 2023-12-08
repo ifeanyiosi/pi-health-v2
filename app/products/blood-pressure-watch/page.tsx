@@ -9,7 +9,8 @@ export default function SmartSleepMonitor() {
     <div className="w-full">
       {bloodPressureWatch.map((product) => (
         <ProductHero
-          key={product.heading}
+          id={product.id}
+          key={product.id}
           image={product.img}
           image2={product.img2}
           image3={product.img3}

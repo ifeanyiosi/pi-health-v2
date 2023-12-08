@@ -8,7 +8,7 @@ export default function AuthLayout({
 }) {
   return (
     <div className="h-full flex flex-col items-center justify-center">
-      <AuthHeader />
+      
       {children}
     </div>
   );

@@ -8,7 +8,7 @@ interface RightArrowProps {
 const RightArrow = ({ onClick }: RightArrowProps) => {
   return (
     <div
-      className="lg:w-14 lg:h-14 h-[30px] w-[30px] rounded-full text-white bg-black bg-opacity-40 hover:bg-opacity-100 duration-300 cursor-pointer flex justify-center items-center z-10 absolute top-[35%] lg:right-[-60px] right-[-40px] "
+      className="lg:w-14 lg:h-14 h-[30px] mt-4 w-[30px] rounded-full text-[#000]  bg-opacity-40 hover:bg-opacity-100 duration-300 cursor-pointer flex justify-center items-center absolute z-10 bottom-[-55px] right-[20px]"
       onClick={onClick}
     >
       <span className="text-xl">
