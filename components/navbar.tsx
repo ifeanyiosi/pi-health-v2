@@ -25,7 +25,7 @@ export default function Navbar() {
             <Link className="text-[16px] " href="/">
               Contact Us
             </Link>
-            <Link className="text-[16px] " href="/">
+            <Link className="text-[16px] " href="/auth/login">
               Login
             </Link>
           </div>
@@ -53,7 +53,7 @@ export default function Navbar() {
 
               <DropdownMenuContent className="w-56" align="end">
                 <DropdownMenuLabel>
-                  <div className="flex flex-col text-[#fff] gap-2 space-y-1">
+                  <div className="flex flex-col text-[#000] gap-2 space-y-1">
                     <Link href="/products/smart-health-ring">
                       Smart Health Ring
                     </Link>

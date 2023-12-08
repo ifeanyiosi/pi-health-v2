@@ -9,6 +9,7 @@ export default function SmartSleepMonitor() {
     <div className="w-full">
       {smartHealthRing.map((product) => (
         <ProductHero
+          id={product.id}
           key={product.heading}
           image={product.img}
           image2={product.img2}

@@ -52,7 +52,7 @@ export default function RelatedProductsSlider() {
       <div className="w-full  ">
         <Slider className="z-[50] " {...settings}>
           {relatedProducts.map((rel) => (
-            <div className="flex items-center gap-4" key={rel.id}>
+            <div className="flex items-center px-2 py-4 gap-4" key={rel.id}>
               {" "}
               <Link
                 href={rel.href}

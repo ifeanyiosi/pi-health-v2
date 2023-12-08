@@ -4,6 +4,9 @@ import { Button } from "@/components/ui/button";
 import { IoIosCloseCircle } from "react-icons/io";
 import Image from "next/image";
 import React, { useState } from "react";
+import Link from "next/link";
+import { useDispatch } from "react-redux";
+import { useRouter } from "next/navigation";
 
 interface ProductHeroProps {
   image: string;
@@ -11,6 +14,7 @@ interface ProductHeroProps {
   image3: string;
   heading: string;
   desc: string;
+  id: number;
 }
 
 export default function ProductHero({
@@ -19,8 +23,23 @@ export default function ProductHero({
   image3,
   heading,
   desc,
+  id,
 }: ProductHeroProps) {
+  const dispatch = useDispatch();
+  const router = useRouter();
   const [fullText, setFullText] = useState(false);
+  const idString = (id: any) => {
+    return String(id).toLowerCase().split(" ").join("");
+  };
+  const rootId = idString(id);
+
+  const handleProductDetails = () => {
+    router.push(`/product/${rootId}`, {
+      state: {
+        item: { id, heading, desc, image, image2, image3 },
+      },
+    });
+  };
 
   return (
     <div className="w-full relative min-h-screen flex flex-col items-center justify-center pb-[64px] px-[30xp] lg:px-[64px] bg-[rgba(17,16,16,0.95)] ">
@@ -117,7 +136,10 @@ export default function ProductHero({
             </button>
 
             <div className=" mt-[46px] w-full">
-              <Button className=" h-[55px] border-[2px] text-[18px] border-[#fff] max-w-[400px] w-full">
+              <Button
+                onClick={handleProductDetails}
+                className=" h-[55px] border-[2px] text-[18px] border-[#fff] max-w-[400px] w-full"
+              >
                 Buy Now
               </Button>
             </div>

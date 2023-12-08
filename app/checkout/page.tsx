@@ -61,9 +61,11 @@ export default function Checkout() {
             at the end if one does not already exist for you.
           </p>
 
-          <Button className="h-[55px] mt-10 lg:max-w-[500px] w-full">
-            Continue as Guest
-          </Button>
+          <Link href="/order/guest" className="w-full">
+            <Button className="h-[55px] mt-10 lg:max-w-[500px] w-full">
+              Continue as Guest
+            </Button>
+          </Link>
         </div>
         <div className="w-full mt-8 lg:mt-0 ">
           <h1 className="text-[25px] lg:text-[32px] text-start  text-[rgba(0,0,0,0.90)] font-bold font-aspekta ">

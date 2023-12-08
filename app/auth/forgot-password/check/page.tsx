@@ -10,7 +10,7 @@ export default function ForgotPasswordCheck() {
   const router = useRouter();
 
   return (
-    <div className=" w-full px-8 items-center justify-center ">
+    <div className=" w-full min-h-screen px-8 items-center justify-center ">
       <div className="flex items-center mt-8 lg:mt-[50px] justify-center">
         <Image width={180} height={156} src="/forgot2.png" alt="logo" />
       </div>
@@ -34,7 +34,7 @@ export default function ForgotPasswordCheck() {
       <div className="w-full items-center mx-auto justify-center lg:max-w-[400px] mt-10 ">
         <Button
           onClick={() => router.push("/auth/forgot-password/reset")}
-          className="h-[55px] text-[#000] w-full font-bold "
+          className="h-[55px]  w-full font-bold "
         >
           Re-send Link
         </Button>
